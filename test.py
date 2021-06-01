@@ -1,11 +1,4 @@
-def mapto(x, minx, maxx, miny, maxy):
-        tmaxx = maxx-minx
-        tmaxy = maxy-miny
-        scale = tmaxy/tmaxx   
-        x = x-minx
-        x *= scale
-        x += miny
-        return x
+x = [[1]]
+y = x[0][0]
 
-
-print(mapto(0.7,0,1,0,10))
+print(x, y)

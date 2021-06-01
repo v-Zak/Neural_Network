@@ -6,7 +6,10 @@ class Member:
         self.fitness = 0       
 
     def think(self, a):
-        return self.brain.feedforward(a)
+        return float(self.brain.feedforward(a)[0][0])
+
+    def mutate(self, mutationRate):
+        self.brain.mutate(mutationRate)
     
     def updatefitness(self,f):
         self.fitness = f
